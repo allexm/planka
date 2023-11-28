@@ -1,0 +1,20 @@
+[ req ]
+ default_bits = 2048
+ distinguished_name = req_distinguished_name
+ req_extensions = req_ext
+ [ req_distinguished_name ]
+ countryName = Country Name (2 letter code)
+ countryName_default = RU
+ stateOrProvinceName = State or Province Name (full name)
+ stateOrProvinceName_default = Murom
+ localityName = Locality Name (eg, city)
+ localityName_default = Murom
+ organizationName = Organization Name (eg, company)
+ organizationName_default = RS
+ commonName = Common Name (eg, YOUR name or FQDN)
+ commonName_max = 64
+ commonName_default = redsite.ru
+ [ req_ext ]
+ basicConstraints = CA:FALSE
+ keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+ subjectAltName = DNS:redsite.ru 
